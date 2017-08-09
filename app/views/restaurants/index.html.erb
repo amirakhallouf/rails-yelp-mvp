@@ -1,0 +1,11 @@
+<h1>Restaurants#index</h1>
+
+<!-- index means to show all of this -->
+
+<% @restaurants.each do |restaurant| %>
+  <h2><%= restaurant.name %></h2>
+  <p><%= restaurant.address %></p>
+  <p><%= restaurant.phone_number %></p>
+  <p><%= restaurant.category %></p>
+<% end %>
+<%= link_to "create new restaurant", new_restaurant_path %>

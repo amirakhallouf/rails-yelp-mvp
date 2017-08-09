@@ -1,0 +1,10 @@
+<!-- we talk the form from here https://github.com/plataformatec/simple_form -->
+<center>
+  <%= simple_form_for @restaurant do |f| %>
+    <%= f.input :name %>
+    <%= f.input :address %>
+    <%= f.input :phone_number %>
+    <%= f.input :category %>
+    <%= f.button :submit %>
+  <% end %>
+</center>
