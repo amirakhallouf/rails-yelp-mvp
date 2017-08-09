@@ -6,7 +6,7 @@ class CreateRestaurants < ActiveRecord::Migration[5.0]
       t.string :phone_number
       t.string :category
 
-      t.timestamps
+      t.timestamps   # it means created at & updated at
     end
   end
 end
